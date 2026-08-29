@@ -44,7 +44,7 @@ jobs:
           if [ ! -f "capacitor.config.json" ] && [ ! -f "capacitor.config.ts" ]; then
             npx cap init "Gemini Chat" "com.example.geminichat" --web-dir dist
           fi
-          if [ ! -d "android" ]; me
+          if [ ! -d "android" ]; then
             npx cap add android
           fi
           npx cap sync android
